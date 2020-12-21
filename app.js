@@ -59,6 +59,6 @@ function clickHandler() {
   output.innerText = finalOutput;
 }
 
-amountCust.addEventListener("change", changeHandler);
+amountCust.addEventListener("input", changeHandler);
 
 button.addEventListener("click", clickHandler);

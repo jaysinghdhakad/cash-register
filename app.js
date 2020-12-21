@@ -1,3 +1,26 @@
+var billAmount = document.querySelector("#textarea1");
+var amountCust = document.querySelector("#textarea2");
+var button = document.querySelector("#button");
+var output = document.querySelector("#output");
+
+function changeHandler() {
+  var amount = billAmount.value;
+  if (amount === "") {
+    output.innerText = "Please put customer bill amount";
+  }
+}
+function clickHandler() {
+  console.log("jay");
+  var cost = parseInt(billAmount.value);
+  var payment = parseInt(amountCust.value);
+  var change = payment - cost;
+  console.log(change);
+  console.log(change % 10);
+  var d = change % 10;
+  var c = ((change % 100) - d) / 10;
+  var b = ((change % 1000) - (c * 10 + d)) / 100;
+  var a = (change - (b * 100 + c * 10 + d)) / 1000;
+  console.log(a + b + c + d);
   if (d >= 5) {
     var z = d - 5;
     var y = 1;

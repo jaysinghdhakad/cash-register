@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+}
+#textarea1 {
+  display: block;
+  width: 50%;
+  height: 8vh;
+  margin: auto;
+}
+#textarea2 {
+  display: block;
+  width: 50%;
+  height: 8vh;
+  margin: auto;
+}
+#button {
+  padding: 1rem;
+  background-color: grey;
+  display: block;
+  margin: auto;
+}
+#output {
+  display: block;
+  width: 50%;
+  height: 8vh;
+  margin: auto;
+  outline: 1px solid black;
+}
